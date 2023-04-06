@@ -1,0 +1,33 @@
+name: Bug 🐛
+description: Report a bug.
+title: "[BUG] "
+labels: []
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      For more info on how to use a Bug look [here](https://docs.woosmap.dev/how_we_work/issues/#bugs)
+- type: textarea
+  attributes:
+    label: Description
+    description: Define what part of the repo contains the bug, why this is a bug and any other relevant information. Current and expected behaviour can be helpful.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Steps to Reproduce
+    description: Provide links, steps or code.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Possible Fix
+    description: This can be filled later if not known.
+- type: markdown
+  attributes:
+    value: |
+      Thanks for completing our form!
+      Don't forget to select the project on the right ->
+      and to then, if possible, fill in the project fields.
+

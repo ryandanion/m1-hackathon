@@ -1,0 +1,38 @@
+name: Task 📗
+description: Track a single simple piece of work
+labels: []
+
+body:
+- type: markdown
+  attributes:
+    value: |
+      For more info on how to use a Task look [here](https://docs.woosmap.dev/how_we_work/issues/#tasks)
+- type: textarea
+  attributes:
+    label: What?
+    description: Detailed description of the task.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Why?
+    description: Why is this change important or a link to the EPIC associated with this task.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Engineering Section
+    description: After engineers have discussed are there any comments, solution points or push back
+- type: textarea
+  attributes:
+    label: Blockers
+    description: List tasks, info etc., if any, which must be completed to start this one.
+    placeholder: |
+      "- [ ] Woosmap/maps#1"
+- type: markdown
+  attributes:
+    value: |
+      Thanks for completing the form!
+      Don't forget to select the project on the right ->
+      and to then, if possible fill in the project fields.
+      If this task is part of an EPIC you should add this to its sub-tasks.
